@@ -1,0 +1,5 @@
+.*.swp
+
+*.egg
+*.egg-info
+*.egg-link
