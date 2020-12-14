@@ -15,6 +15,8 @@ class FixRenameMockPatch(fixer_base.BaseFix):
     PATTERN = """
     power<
         'patch' args=trailer< '(' [any] ')' >
+        |
+        decorator< '@' dotted_name< 'mock' '.' 'patch' > '(' [any] ')' '\\n' >
     >
     """
 
